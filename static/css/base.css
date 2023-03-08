@@ -1,0 +1,153 @@
+/* Base */
+:root {
+  --blue: #007bff;
+  --red: #dc3545;
+  --grey: hsl(0, 0%, 60%);
+  --success: #28a745;
+  --main-bg: hsl(240, 44%, 58%);
+  --main-dark-text: hsl(240, 29%, 19%);
+  --card: hsl(240, 64%, 63%);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 6em;
+  background-color: var(--main-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-row {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.container-col {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo small {
+  color: white;
+}
+
+.logo-text {
+  font-size: 3em;
+  color: var(--main-dark-text);
+}
+
+.main-body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2em;
+}
+
+footer {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  height: 2em;
+  bottom: 0;
+  background: var(--grey);
+  text-align: center;
+}
+
+/* category list view */
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 1em;
+}
+
+.card {
+  border: 1px solid var(--card);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.smaller-text {
+  font-size: 0.8em;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: dotted 1px var(--main-bg);
+  padding-top: 5px;
+  width: 100%;
+}
+
+.btn-go {
+  background-color: var(--success);
+  border: none;
+  padding: 0.3em 1em;
+  border-radius: 4px;
+}
+
+.btn-go a {
+  color: white;
+}
+
+.card:hover {
+  background: var(--card);
+}
+
+.card:hover h3,
+.card:hover p {
+  color: white;
+}
+
+.card:hover .card-info {
+  border-top: dottes 1px white;
+}
+
+.main-lvl-text {
+  background: var(--main-dark-text);
+  color: white;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.category-desc {
+  width: 100%;
+  border-top: 1px solid var(--main-dark-text);
+}
