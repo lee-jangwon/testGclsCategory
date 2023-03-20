@@ -1,83 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 :root {
-    --main-bg-color: hsl(240, 34%, 52%);
-    --sub-bg-color: hsl(0, 55%, 74%);
+  --main-bg-color: hsl(240, 34%, 52%);
+  --sub-bg-color: hsl(0, 55%, 74%);
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    width: 100%;
-    height: 6em;
-    background: linear-gradient(to right, var(--main-bg-color), var(--sub-bg-color));
+  width: 100%;
+  height: 6em;
+  background: linear-gradient(to right, var(--main-bg-color), var(--sub-bg-color));
 }
 
 footer {
-    justify-self: flex-end;
-    background-color: grey;
-    text-align: center;
-    width: 100%;
-    color: white;
-    padding: 1em;
+  justify-self: flex-end;
+  background-color: grey;
+  text-align: center;
+  width: 100%;
+  color: white;
+  padding: 1em;
 }
 
 .container-row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .secret-page {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo h1 {
-    color: white;
+  color: white;
 }
 
 .logo small {
-    color: rgb(197, 197, 197);
-}
-
-.secret-page h2 {
-    color: pink;
+  color: rgb(197, 197, 197);
 }
 
 .main-body {
-    min-height: 100vh;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 3em;
+  min-height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 3em;
 }
 
 .container-col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.secret-page h2 a {
+  text-decoration: none;
+  color: pink;
 }
 
 /* First category */
 .carousel {
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-    
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.main-lvl-text {
+  text-align: center;
+}
+
+.circle-div {
+  width: 4em;
+  height: 4em;
+  background: linear-gradient(var(--main-bg-color), white) padding-box, linear-gradient(to right, var(--main-bg-color), white) border-box;
+  border-radius: 100%;
+  border: 4px solid transparent;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.btn-go a {
+  text-decoration: none;
+  color: rgb(147, 165, 230);
 }
